@@ -1,0 +1,30 @@
+{
+  "name": "green-gorilla",
+  "version": "1.2.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./src/bin/www",
+    "start:dev": "DEBUG=green-gorilla:* PORT=9000 nodemon ./src/bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "dotenv": "^4.0.0",
+    "express": "~4.15.2",
+    "express-favicon-short-circuit": "^1.1.0",
+    "express-graphql": "^0.6.6",
+    "graphql": "^0.10.1",
+    "morgan": "~1.8.1",
+    "pug": "~2.0.0-beta11"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.1.0",
+    "nodemon": "^1.11.0"
+  }
+}

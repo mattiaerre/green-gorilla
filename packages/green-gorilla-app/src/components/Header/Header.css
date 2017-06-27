@@ -1,0 +1,9 @@
+.Header {
+  background-color: #222;
+  padding: 2em;
+  color: white;
+}
+
+.Header h1 {
+    color: palegreen;
+}
