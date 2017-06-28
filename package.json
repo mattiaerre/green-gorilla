@@ -5,6 +5,30 @@
     "eslint-plugin-import": "^2.6.0",
     "eslint-plugin-jsx-a11y": "^6.0.0",
     "eslint-plugin-react": "^7.1.0",
-    "lerna": "^2.0.0-rc.5"
-  }
+    "lerna": "^2.0.0-rc.5",
+    "oc": "^0.38.0"
+  },
+  "name": "green-gorilla-hub",
+  "description": "green-gorilla-hub",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run build --prefix packages/green-gorilla-app",
+    "copy": "rm -rf packages/oc-green-gorilla-app/static && cp -R packages/green-gorilla-app/build/static packages/oc-green-gorilla-app",
+    "deploy": "git subtree push --prefix packages/green-gorilla heroku master",
+    "publish": "oc publish packages/oc-green-gorilla-app",
+    "registry": "oc dev packages 3030"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattiaerre/green-gorilla-hub.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Mattia Richetto",
+    "email": "mattia.richetto@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/mattiaerre/green-gorilla-hub/issues"
+  },
+  "homepage": "https://github.com/mattiaerre/green-gorilla-hub#readme"
 }

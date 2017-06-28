@@ -15,7 +15,8 @@ const schema = buildSchema(`
     name: String,
     weather: [Weather],
     sys: Sys,
-    main: Main
+    main: Main,
+    dt: Float
   }
 
   type Sys {

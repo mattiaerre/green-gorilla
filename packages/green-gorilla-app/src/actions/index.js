@@ -21,7 +21,8 @@ const getData = () => {
         },
         main {
           temp
-        }
+        },
+        dt
       }
     }
     `);

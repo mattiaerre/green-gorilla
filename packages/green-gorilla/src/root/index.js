@@ -13,16 +13,17 @@ const root = () => { // eslint-disable-line arrow-body-style
         name: 'London',
         weather: [
           {
-            icon: '09d',
-            description: 'light intensity drizzle'
+            icon: '10n',
+            description: 'light rain'
           }
         ],
         sys: {
           country: 'GB'
         },
         main: {
-          temp: 280.32
-        }
+          temp: 16.62
+        },
+        dt: 1473541622,
       };
     }
   };

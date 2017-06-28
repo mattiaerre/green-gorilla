@@ -1,7 +1,7 @@
 {
   "name": "oc-green-gorilla-app",
   "description": "oc-green-gorilla-app",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "repository": "TODO",
   "author": {
     "name": "Mattia Richetto",
@@ -19,5 +19,9 @@
       ]
     },
     "state": "experimental"
+  },
+  "hash": {
+    "js": "51c7c008",
+    "css": "1b60266f"
   }
 }
