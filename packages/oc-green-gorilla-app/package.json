@@ -1,0 +1,23 @@
+{
+  "name": "oc-green-gorilla-app",
+  "description": "oc-green-gorilla-app",
+  "version": "1.0.0-alpha.1",
+  "repository": "TODO",
+  "author": {
+    "name": "Mattia Richetto",
+    "email": "mattia.richetto@gmail.com"
+  },
+  "oc": {
+    "files": {
+      "data": "server.js",
+      "template": {
+        "src": "template.jade",
+        "type": "jade"
+      },
+      "static": [
+        "static"
+      ]
+    },
+    "state": "experimental"
+  }
+}

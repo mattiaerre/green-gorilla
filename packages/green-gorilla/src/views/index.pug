@@ -1,8 +1,6 @@
 extends layout
 
 block stylesheets
-  link(href= appCssPath rel="stylesheet")
 
 block content
-  #root
-  script(type="text/javascript" src= appJsPath)
+  != components['oc-green-gorilla-app']
