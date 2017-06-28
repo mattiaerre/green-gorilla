@@ -5,7 +5,7 @@ const Client = require('oc-client');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  const client = new Client({ registries: { serverRendering: 'http://localhost:3030/' } });
+  const client = new Client({ registries: { serverRendering: process.env.OC_REGISTRY_BASE_URL } });
 
   const components = [
     { name: 'oc-client' },
