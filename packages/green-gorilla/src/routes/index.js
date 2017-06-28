@@ -29,10 +29,7 @@ router.get('/', (req, res) => {
         components: {
           'oc-client': htmls[0],
           'oc-green-gorilla-app': htmls[1]
-        },
-        appCssPath: process.env.APP_CSS_PATH,
-        appJsPath: process.env.APP_JS_PATH
-
+        }
       };
       res.render('index', model);
     });
