@@ -1,4 +1,4 @@
-const debug = require('debug')('green-gorilla:routes/index');
+const debug = require('debug')('green-gorilla-site:routes/index');
 const express = require('express');
 const Client = require('oc-client');
 

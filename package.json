@@ -16,8 +16,8 @@
     "lerna": "^2.0.0-rc.5",
     "oc": "^0.38.0"
   },
-  "name": "green-gorilla-hub",
-  "description": "green-gorilla-hub",
+  "name": "green-gorilla",
+  "description": "green-gorilla",
   "version": "1.0.0",
   "scripts": {
     "build": "npm run build --prefix packages/green-gorilla-app",
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattiaerre/green-gorilla-hub.git"
+    "url": "git+https://github.com/mattiaerre/green-gorilla.git"
   },
   "keywords": [],
   "author": {
@@ -37,9 +37,9 @@
     "email": "mattia.richetto@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/mattiaerre/green-gorilla-hub/issues"
+    "url": "https://github.com/mattiaerre/green-gorilla/issues"
   },
-  "homepage": "https://github.com/mattiaerre/green-gorilla-hub#readme",
+  "homepage": "https://github.com/mattiaerre/green-gorilla#readme",
   "dependencies": {
     "babel-runtime": "^6.23.0"
   }

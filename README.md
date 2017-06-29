@@ -1,4 +1,4 @@
-# green-gorilla-hub
+# green-gorilla
 
 Express + OpenComponents + React = :love:
 
