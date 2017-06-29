@@ -24,7 +24,8 @@
     "copy": "rm -rf packages/oc-green-gorilla-app/static && cp -R packages/green-gorilla-app/build/static packages/oc-green-gorilla-app",
     "deploy": "git subtree push --prefix packages/green-gorilla heroku master",
     "oc:publish": "oc publish packages/oc-green-gorilla-app",
-    "registry": "oc dev packages 3030"
+    "registry": "oc dev packages 3030",
+    "site": "npm run start:dev --prefix packages/green-gorilla"
   },
   "repository": {
     "type": "git",

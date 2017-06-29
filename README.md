@@ -1,13 +1,17 @@
 # green-gorilla-hub
 
-green-gorilla-hub
+Express + OpenComponents + React = :love:
 
-## How to deploy to Heroku
-
-Prerequisite: https://devcenter.heroku.com/articles/heroku-cli#macos-installer
+## DX
 
 ```bash
-heroku create green-gorilla
+lerna bootstrap
 
-git subtree push --prefix packages/green-gorilla heroku master
+npm run build
+
+npm run copy // WIP
+
+npm run registry
+
+npm run site // new iTerm tab
 ```
