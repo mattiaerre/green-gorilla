@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const app = require('../app');
-const debug = require('debug')('green-gorilla:server');
+const debug = require('debug')('green-gorilla-site:server');
 const http = require('http');
 
 function normalizePort(val) {
