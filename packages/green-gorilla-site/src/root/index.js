@@ -1,30 +1,22 @@
+const fetch = require('node-fetch');
 const { name, version } = require('../../package.json');
 
 const root = () => { // eslint-disable-line arrow-body-style
   return {
     info: () => { // eslint-disable-line arrow-body-style
       return {
-        name,
+        name: '➜ ~', // todo: replace w/ `name`
         version
       };
     },
-    currentWeather: () => { // eslint-disable-line arrow-body-style
-      return {
-        name: 'London',
-        weather: [
-          {
-            icon: '10n',
-            description: 'light rain'
-          }
-        ],
-        sys: {
-          country: 'GB'
-        },
-        main: {
-          temp: 16.62
-        },
-        dt: 1473541622,
-      };
+    currentWeather: async () => {
+      const city = 'London';
+      const appid = process.env.OPEN_WEATHER_MAP_API_KEY;
+      const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appid}&units=metric`;
+      const currentWeather = await fetch(url)
+        .then(response => (response.json)())
+        .then(data => (data));
+      return currentWeather;
     }
   };
 };
