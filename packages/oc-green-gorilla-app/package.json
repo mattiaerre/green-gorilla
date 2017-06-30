@@ -1,8 +1,8 @@
 {
   "name": "oc-green-gorilla-app",
   "description": "oc-green-gorilla-app",
-  "version": "1.0.0-alpha.2",
-  "repository": "TODO",
+  "version": "1.0.0-alpha.3",
+  "repository": "https://github.com/mattiaerre/green-gorilla/tree/master/packages/oc-green-gorilla-app",
   "author": {
     "name": "Mattia Richetto",
     "email": "mattia.richetto@gmail.com"
