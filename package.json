@@ -12,6 +12,7 @@
   "description": "green-gorilla",
   "version": "1.0.0",
   "scripts": {
+    "app": "npm start --prefix packages/green-gorilla-app",
     "build": "npm run build --prefix packages/green-gorilla-app",
     "copy": "rm -rf packages/oc-green-gorilla-app/static && cp -R packages/green-gorilla-app/build/static packages/oc-green-gorilla-app",
     "deploy": "git subtree push --prefix packages/green-gorilla-site heroku master",

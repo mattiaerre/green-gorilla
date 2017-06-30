@@ -14,4 +14,6 @@ npm run copy // WIP
 npm run registry
 
 npm run site // new iTerm tab
+
+npm run site // new iTerm tab
 ```
