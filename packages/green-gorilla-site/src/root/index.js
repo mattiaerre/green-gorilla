@@ -9,8 +9,7 @@ const root = () => { // eslint-disable-line arrow-body-style
         version
       };
     },
-    currentWeather: async () => {
-      const city = 'London';
+    currentWeather: async ({ city }) => {
       const appid = process.env.OPEN_WEATHER_MAP_API_KEY;
       const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appid}&units=metric`;
       const currentWeather = await fetch(url)

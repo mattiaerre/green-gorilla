@@ -29,7 +29,7 @@ const schema = buildSchema(`
 
   type Query {
     info: Info,
-    currentWeather: CurrentWeather
+    currentWeather(city: String = "${process.env.CITY}"): CurrentWeather
   }
 `);
 
