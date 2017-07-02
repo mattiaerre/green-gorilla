@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index currentWeather() 1`] = `Object {}`;
+
+exports[`index fetch 1`] = `
+Array [
+  Array [
+    "http://api.openweathermap.org/data/2.5/weather?q=London&appid=appid&units=metric",
+  ],
+]
+`;
+
+exports[`index info() 1`] = `
+Object {
+  "name": "➜ ~",
+  "version": "1.4.0",
+}
+`;
+
+exports[`index root 1`] = `
+Object {
+  "currentWeather": [Function],
+  "info": [Function],
+}
+`;

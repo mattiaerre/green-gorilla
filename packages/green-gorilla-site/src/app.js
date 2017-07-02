@@ -31,7 +31,7 @@ app.use('/', index);
 
 app.use('/graphql', graphqlHTTP({
   schema,
-  rootValue: root(),
+  rootValue: root({ appid: process.env.OPEN_WEATHER_MAP_API_KEY }),
   graphiql: true
 }));
 
