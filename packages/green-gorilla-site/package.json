@@ -41,7 +41,6 @@
     "nodemon": "^1.11.0"
   },
   "jest": {
-    "automock": false,
     "setupFiles": [
       "./setupJest.js"
     ]
