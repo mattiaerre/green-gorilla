@@ -17,7 +17,7 @@ Object {
 }
 `;
 
-exports[`index root 1`] = `
+exports[`index root API 1`] = `
 Object {
   "currentWeather": [Function],
   "info": [Function],

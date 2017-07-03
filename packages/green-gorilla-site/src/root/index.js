@@ -1,5 +1,5 @@
-const fetch = require('node-fetch');
 const { name, version } = require('../../package.json');
+const currentWeather = require('./current-weather');
 
 const root = ({ appid }) => { // eslint-disable-line arrow-body-style
   return {
@@ -9,13 +9,7 @@ const root = ({ appid }) => { // eslint-disable-line arrow-body-style
         version
       };
     },
-    currentWeather: async ({ city }) => {
-      const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appid}&units=metric`;
-      const currentWeather = await fetch(url)
-        .then(response => (response.json)())
-        .then(data => (data));
-      return currentWeather;
-    }
+    currentWeather: currentWeather({ appid })
   };
 };
 
