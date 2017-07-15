@@ -1,7 +1,7 @@
 {
   "name": "oc-green-gorilla-app",
   "description": "oc-green-gorilla-app",
-  "version": "1.0.0-alpha.5",
+  "version": "1.0.0-alpha.6",
   "repository": "https://github.com/mattiaerre/green-gorilla/tree/master/packages/oc-green-gorilla-app",
   "author": {
     "name": "Mattia Richetto",
@@ -21,7 +21,7 @@
     "state": "experimental"
   },
   "hash": {
-    "js": "93a83fdf",
+    "js": "5e23fada",
     "css": "1b60266f"
   }
 }
