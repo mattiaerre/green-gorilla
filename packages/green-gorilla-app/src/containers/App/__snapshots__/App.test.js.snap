@@ -14,6 +14,41 @@ exports[`<App /> componentDidMount 1`] = `
       2.0.0-alpha.4
     </h2>
   </div>
+  <div
+    className="OpenWeatherMap"
+  >
+    <div
+      className="main-heading"
+    >
+      London
+      , 
+      GB
+    </div>
+    <div
+      className="day"
+    >
+      Monday 2:50 PM
+    </div>
+    <div
+      className="description"
+    >
+      shower rain
+    </div>
+    <div
+      className="icon"
+    >
+      <img
+        alt="shower rain"
+        src="http://openweathermap.org/img/w/09d.png"
+      />
+    </div>
+    <div
+      className="temperature"
+    >
+      23.33
+       °C
+    </div>
+  </div>
 </div>
 `;
 
@@ -31,5 +66,8 @@ exports[`<App /> constructor 1`] = `
       
     </h2>
   </div>
+  <div
+    className="OpenWeatherMap"
+  />
 </div>
 `;

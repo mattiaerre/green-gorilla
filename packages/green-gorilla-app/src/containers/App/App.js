@@ -7,8 +7,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      info: { name: '', version: '' },
-      currentWeather: { weather: [{}], sys: {}, main: {} }
+      info: { name: '', version: '' }
     };
   }
 
