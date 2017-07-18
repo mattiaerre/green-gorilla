@@ -1,4 +1,5 @@
 const { buildSchema } = require('graphql');
+const airportCodes = require('../graphql/airport-codes');
 
 const schema = buildSchema(`
   type Info {
@@ -27,9 +28,12 @@ const schema = buildSchema(`
     temp: Float
   }
 
+  ${airportCodes.schema}
+
   type Query {
     info: Info,
     currentWeather(city: String = "${process.env.CITY}"): CurrentWeather
+    airportCodes(city: String, country: String): [${airportCodes.TYPE_NAME}]
   }
 `);
 

@@ -13,12 +13,13 @@ Array [
 exports[`index info() 1`] = `
 Object {
   "name": "➜ ~",
-  "version": "1.4.0",
+  "version": "1.4.2",
 }
 `;
 
 exports[`index root API 1`] = `
 Object {
+  "airportCodes": [Function],
   "currentWeather": [Function],
   "info": [Function],
 }
