@@ -1,5 +1,6 @@
 const { name, version } = require('../../package.json');
 const currentWeather = require('./current-weather');
+const airportCodes = require('../graphql/airport-codes');
 
 const root = ({ appid }) => { // eslint-disable-line arrow-body-style
   return {
@@ -9,7 +10,8 @@ const root = ({ appid }) => { // eslint-disable-line arrow-body-style
         version
       };
     },
-    currentWeather: currentWeather({ appid })
+    currentWeather: currentWeather({ appid }),
+    airportCodes: airportCodes.resolver
   };
 };
 
