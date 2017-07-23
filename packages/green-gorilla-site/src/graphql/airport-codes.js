@@ -13,8 +13,11 @@ const schema = `
   }
 `;
 
-const resolver = ({ city, country }) => {
+const resolver = ({ id, city, country }) => {
   let result = airports.filter(e => e.iata !== '' && e.icao !== '\\N');
+  if (id) {
+    result = result.filter(e => (e.id === id));
+  }
   if (city) {
     result = result.filter(e => (e.city.toLowerCase().includes(city.toLowerCase())));
   }

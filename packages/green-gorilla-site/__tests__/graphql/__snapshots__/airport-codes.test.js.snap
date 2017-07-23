@@ -17,7 +17,7 @@ Object {
 }
 `;
 
-exports[`airport-codes filter by city 1`] = `
+exports[`airport-codes filter by city: Torino 1`] = `
 Array [
   Object {
     "altitude": "989",
@@ -36,7 +36,26 @@ Array [
 ]
 `;
 
-exports[`airport-codes filter by country 1`] = `
+exports[`airport-codes filter by city: Torino 2`] = `
+Array [
+  Object {
+    "altitude": "989",
+    "city": "Torino",
+    "country": "Italy",
+    "dst": "E",
+    "iata": "TRN",
+    "icao": "LIMF",
+    "id": "1526",
+    "latitude": "45.200761",
+    "longitude": "7.649631",
+    "name": "Torino",
+    "timezone": "1",
+    "tz": "Europe/Rome",
+  },
+]
+`;
+
+exports[`airport-codes filter by country: Malta 1`] = `
 Array [
   Object {
     "altitude": "300",
@@ -65,6 +84,58 @@ Array [
     "name": "Xewkija Heliport",
     "timezone": "1",
     "tz": "Europe/Malta",
+  },
+]
+`;
+
+exports[`airport-codes filter by country: Malta 2`] = `
+Array [
+  Object {
+    "altitude": "300",
+    "city": "Malta",
+    "country": "Malta",
+    "dst": "E",
+    "iata": "MLA",
+    "icao": "LMML",
+    "id": "1606",
+    "latitude": "35.857497",
+    "longitude": "14.4775",
+    "name": "Luqa",
+    "timezone": "1",
+    "tz": "Europe/Malta",
+  },
+  Object {
+    "altitude": "300",
+    "city": "Gozo",
+    "country": "Malta",
+    "dst": "E",
+    "iata": "GZM",
+    "icao": "LMMG",
+    "id": "4005",
+    "latitude": "36.027222",
+    "longitude": "14.272778",
+    "name": "Xewkija Heliport",
+    "timezone": "1",
+    "tz": "Europe/Malta",
+  },
+]
+`;
+
+exports[`airport-codes filter by id: 502 1`] = `
+Array [
+  Object {
+    "altitude": "202",
+    "city": "London",
+    "country": "United Kingdom",
+    "dst": "E",
+    "iata": "LGW",
+    "icao": "EGKK",
+    "id": "502",
+    "latitude": "51.148056",
+    "longitude": "-0.190278",
+    "name": "Gatwick",
+    "timezone": "0",
+    "tz": "Europe/London",
   },
 ]
 `;
