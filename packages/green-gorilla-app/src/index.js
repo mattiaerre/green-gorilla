@@ -9,4 +9,7 @@ const matches = url.match(/morale=([^&]*)/);
 
 const actions = { getData };
 
-ReactDOM.render(<App actions={actions} morale={matches ? matches[1] : undefined} />, document.getElementById('root'));
+ReactDOM.render(
+  <App actions={actions} morale={matches ? matches[1] : undefined} />,
+  document.getElementById('root')
+);
