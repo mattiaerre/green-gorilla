@@ -2,7 +2,7 @@
 
 exports[`<App /> componentDidMount 1`] = `
 <div
-  className="App"
+  className="App good"
 >
   <div
     className="Header"
@@ -13,6 +13,38 @@ exports[`<App /> componentDidMount 1`] = `
     <h2>
       2.0.0-alpha.4
     </h2>
+  </div>
+  <div
+    className="buttons-container"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+      value="San Francisco"
+    >
+      San Francisco
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+      value="London"
+    >
+      London
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+      value="Torino"
+    >
+      Torino
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+      value="Tokyo"
+    >
+      Tokyo
+    </button>
   </div>
   <div
     className="OpenWeatherMap"
@@ -27,7 +59,7 @@ exports[`<App /> componentDidMount 1`] = `
     <div
       className="day"
     >
-      Monday 2:50 PM
+      Monday 6:50 AM
     </div>
     <div
       className="description"
@@ -49,12 +81,76 @@ exports[`<App /> componentDidMount 1`] = `
        °C
     </div>
   </div>
+  <ul
+    className="morale-check"
+  >
+    <li
+      className="awesome"
+      onClick={[Function]}
+    >
+      <span
+        className="emoji"
+      >
+        😎
+      </span>
+      <span
+        className="description"
+      >
+        I'm feeling awesome
+      </span>
+    </li>
+    <li
+      className="good"
+      onClick={[Function]}
+    >
+      <span
+        className="emoji"
+      >
+        👍
+      </span>
+      <span
+        className="description"
+      >
+        I'm feeling good
+      </span>
+    </li>
+    <li
+      className="not-great"
+      onClick={[Function]}
+    >
+      <span
+        className="emoji"
+      >
+        😕
+      </span>
+      <span
+        className="description"
+      >
+        I'm not feeling great
+      </span>
+    </li>
+    <li
+      className="unhappy"
+      onClick={[Function]}
+    >
+      <span
+        className="emoji"
+      >
+        😩
+      </span>
+      <span
+        className="description"
+      >
+        I'm feeling unhappy
+      </span>
+    </li>
+  </ul>
 </div>
 `;
 
 exports[`<App /> constructor 1`] = `
 <div
-  className="App"
+  className="App good"
 >
   <div
     className="Header"
@@ -67,7 +163,103 @@ exports[`<App /> constructor 1`] = `
     </h2>
   </div>
   <div
+    className="buttons-container"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+      value="San Francisco"
+    >
+      San Francisco
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+      value="London"
+    >
+      London
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+      value="Torino"
+    >
+      Torino
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+      value="Tokyo"
+    >
+      Tokyo
+    </button>
+  </div>
+  <div
     className="OpenWeatherMap"
   />
+  <ul
+    className="morale-check"
+  >
+    <li
+      className="awesome"
+      onClick={[Function]}
+    >
+      <span
+        className="emoji"
+      >
+        😎
+      </span>
+      <span
+        className="description"
+      >
+        I'm feeling awesome
+      </span>
+    </li>
+    <li
+      className="good"
+      onClick={[Function]}
+    >
+      <span
+        className="emoji"
+      >
+        👍
+      </span>
+      <span
+        className="description"
+      >
+        I'm feeling good
+      </span>
+    </li>
+    <li
+      className="not-great"
+      onClick={[Function]}
+    >
+      <span
+        className="emoji"
+      >
+        😕
+      </span>
+      <span
+        className="description"
+      >
+        I'm not feeling great
+      </span>
+    </li>
+    <li
+      className="unhappy"
+      onClick={[Function]}
+    >
+      <span
+        className="emoji"
+      >
+        😩
+      </span>
+      <span
+        className="description"
+      >
+        I'm feeling unhappy
+      </span>
+    </li>
+  </ul>
 </div>
 `;

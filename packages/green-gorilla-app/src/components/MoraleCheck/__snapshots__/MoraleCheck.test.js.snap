@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MoraleCheck /> should match snapshot 1`] = `
+<ul
+  className="morale-check"
+>
+  <li
+    className="awesome"
+    onClick={[Function]}
+  >
+    <span
+      className="emoji"
+    >
+      😎
+    </span>
+    <span
+      className="description"
+    >
+      I'm feeling awesome
+    </span>
+  </li>
+  <li
+    className="good"
+    onClick={[Function]}
+  >
+    <span
+      className="emoji"
+    >
+      👍
+    </span>
+    <span
+      className="description"
+    >
+      I'm feeling good
+    </span>
+  </li>
+  <li
+    className="not-great"
+    onClick={[Function]}
+  >
+    <span
+      className="emoji"
+    >
+      😕
+    </span>
+    <span
+      className="description"
+    >
+      I'm not feeling great
+    </span>
+  </li>
+  <li
+    className="unhappy"
+    onClick={[Function]}
+  >
+    <span
+      className="emoji"
+    >
+      😩
+    </span>
+    <span
+      className="description"
+    >
+      I'm feeling unhappy
+    </span>
+  </li>
+</ul>
+`;

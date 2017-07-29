@@ -1,0 +1,22 @@
+[
+  {
+    "id": "awesome",
+    "description": "I'm feeling awesome",
+    "emoji": "😎"
+  },
+  {
+    "id": "good",
+    "description": "I'm feeling good",
+    "emoji": "👍"
+  },
+  {
+    "id": "not-great",
+    "description": "I'm not feeling great",
+    "emoji": "😕"
+  },
+  {
+    "id": "unhappy",
+    "description": "I'm feeling unhappy",
+    "emoji": "😩"
+  }
+]

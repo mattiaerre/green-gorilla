@@ -3,14 +3,14 @@ import { Transport } from 'lokka-transport-http';
 
 const client = new Lokka({ transport: new Transport('/graphql') });
 
-const getData = () => {
+const getData = (city) => {
   return client.query(`
     {
       info {
         name
         version
       },
-      currentWeather {
+      currentWeather(city: "${city}") {
         name,
         weather {
           icon

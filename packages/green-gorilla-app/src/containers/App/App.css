@@ -5,3 +5,30 @@
 .OpenWeatherMap {
   padding: 1em;
 }
+
+.buttons-container {
+  padding: 1em;
+}
+
+.awesome {
+  background-color: #5cb85c;
+}
+
+.good {
+  background-color: #5bc0de;
+}
+
+.not-great {
+  background-color: #f0ad4e;
+}
+
+.unhappy {
+  background-color: #d9534f;
+}
+
+.buttons-container button {
+  border: 1px solid gray;
+  background-color: lightgray;
+  margin: 0.25em;
+  padding: 0.5em;
+}
