@@ -1,0 +1,17 @@
+ul.morale-check {
+  list-style: none;
+  padding: 1em 5em;
+  margin: 0;
+}
+
+.morale-check > li {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span.emoji {
+  font-size: 2em;
+  margin: 0 0.5em;
+}

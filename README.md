@@ -5,7 +5,7 @@ Express + OpenComponents + React = :love:
 ## DX
 
 ```bash
-lerna bootstrap
+npx lerna bootstrap
 
 npm run build
 
@@ -19,7 +19,7 @@ npm run site // new iTerm tab
 or
 
 ```bash
-lerna bootstrap
+npx lerna bootstrap
 
 npm run site
 
