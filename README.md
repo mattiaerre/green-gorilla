@@ -5,6 +5,12 @@ Express + OpenComponents + React = :love:
 ## DX
 
 ```bash
+npx lerna clean
+
+npm i
+```
+
+```bash
 npx lerna bootstrap
 
 npm run build

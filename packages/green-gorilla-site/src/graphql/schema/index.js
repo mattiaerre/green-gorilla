@@ -1,5 +1,5 @@
 const { buildSchema } = require('graphql');
-const airportCodes = require('../graphql/airport-codes');
+const airportCodes = require('../airport-codes');
 
 const schema = buildSchema(`
   type Info {

@@ -1,6 +1,6 @@
-const { name, version } = require('../../package.json');
+const { name, version } = require('../../../package.json');
 const currentWeather = require('./current-weather');
-const airportCodes = require('../graphql/airport-codes');
+const airportCodes = require('../airport-codes');
 
 const root = ({ appid }) => { // eslint-disable-line arrow-body-style
   return {

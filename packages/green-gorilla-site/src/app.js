@@ -7,12 +7,9 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const graphqlHTTP = require('express-graphql');
 
-require('babel-core/register');
-require('babel-polyfill');
-
 const index = require('./routes/index');
-const schema = require('./schema');
-const root = require('./root');
+const schema = require('./graphql/schema');
+const root = require('./graphql/root');
 
 const app = express();
 
