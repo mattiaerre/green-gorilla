@@ -9,7 +9,11 @@ router.get('/', (req, res) => {
 
   const components = [
     { name: 'oc-client' },
-    { name: 'oc-green-gorilla-app' }
+    { name: 'oc-green-gorilla-app' },
+    {
+      name: 'oc-ua-tracking-code',
+      parameters: { trackingId: process.env.TRACKING_ID }
+    }
   ];
 
   client.renderComponents(
@@ -28,7 +32,8 @@ router.get('/', (req, res) => {
       const model = {
         components: {
           'oc-client': htmls[0],
-          'oc-green-gorilla-app': htmls[1]
+          'oc-green-gorilla-app': htmls[1],
+          'oc-ua-tracking-code': htmls[2]
         }
       };
       res.render('index', model);
