@@ -1,40 +1,11 @@
-const { buildSchema } = require('graphql');
-const airportCodes = require('../airport-codes');
+const {
+  GraphQLSchema
+} = require('graphql');
 
-const schema = buildSchema(`
-  type Info {
-    name: String,
-    version: String
-  }
+const Query = require('./types/Query');
 
-  type Weather {
-    icon: String,
-    description: String
-  }
-
-  type CurrentWeather {
-    name: String,
-    weather: [Weather],
-    sys: Sys,
-    main: Main,
-    dt: Float
-  }
-
-  type Sys {
-    country: String
-  }
-
-  type Main {
-    temp: Float
-  }
-
-  ${airportCodes.schema}
-
-  type Query {
-    info: Info,
-    currentWeather(city: String = "${process.env.CITY}"): CurrentWeather
-    airportCodes(id: String, city: String, country: String): [${airportCodes.TYPE_NAME}]
-  }
-`);
+const schema = new GraphQLSchema({
+  query: Query
+});
 
 module.exports = schema;

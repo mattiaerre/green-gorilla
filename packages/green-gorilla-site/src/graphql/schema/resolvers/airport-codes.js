@@ -1,18 +1,5 @@
 const airports = require('airport-codes/airports.json');
 
-const TYPE_NAME = 'AirportCode';
-
-const schema = `
-  type ${TYPE_NAME} {
-    id: String,
-    name: String,
-    city: String,
-    country: String,
-    iata: String,
-    icao: String
-  }
-`;
-
 const resolver = ({ id, city, country }) => {
   let result = airports.filter(e => e.iata !== '' && e.icao !== '\\N');
   if (id) {
@@ -27,4 +14,4 @@ const resolver = ({ id, city, country }) => {
   return result;
 };
 
-module.exports = { TYPE_NAME, schema, resolver };
+module.exports = resolver;

@@ -9,7 +9,6 @@ const graphqlHTTP = require('express-graphql');
 
 const index = require('./routes/index');
 const schema = require('./graphql/schema');
-const root = require('./graphql/root');
 
 const app = express();
 
@@ -26,11 +25,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 
-app.use('/graphql', graphqlHTTP({
-  schema,
-  rootValue: root({ appid: process.env.OPEN_WEATHER_MAP_API_KEY }),
-  graphiql: true
-}));
+app.use('/graphql', (req, res) => {
+  graphqlHTTP({
+    schema,
+    graphiql: true,
+    context: {
+      options: {
+        appid: process.env.OPEN_WEATHER_MAP_API_KEY,
+        city: process.env.CITY
+      }
+    }
+  })(req, res);
+});
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
