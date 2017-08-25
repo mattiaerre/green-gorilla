@@ -1,3 +1,6 @@
+require('babel-core/register');
+require('babel-polyfill');
+
 require('dotenv').config();
 const express = require('express');
 const path = require('path');
